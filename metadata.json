@@ -1,0 +1,14 @@
+{
+  "name": "jadestorm-galera_arbitrator",
+  "version": "1.0.0",
+  "author": "Daniel Henninger",
+  "summary": "Manages a bare bones Galera Arbitrator node without touching anything else",
+  "license": "Apache 2.0",
+  "source": "https://github.com/jadestorm/puppet-galera_arbitrator",
+  "project_page": "https://github.com/jadestorm/puppet-galera_arbitrator",
+  "issues_url": "https://github.com/jadestorm/puppet-galera_arbitrator/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
