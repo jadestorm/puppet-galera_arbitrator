@@ -58,7 +58,10 @@ as cluster group by garbd).  Ex:
 ### Parameters for the galera_arbitrator class
 * `servicename`: The service name used with init.d, systemctl, etc.  Default: `garbd`
 * `packagename`: The full package name used with your package manager.  Default: `Percona-XtraDB-Cluster-garbd-57`
-* `sysconfig`: Full path to the sysconfig file used by garbd:  Default: `/etc/sysconfig/garbd`
+* `sysconfig`: Full path to the sysconfig file used by garbd.  Default: `/etc/sysconfig/garbd`
+* `ensure_package`: Sets the ensure value of the package resource.  Default: `present`
+* `ensure_service`: Sets the ensure value of the service resource.  Default: `running`
+* `enable_service`: Sets the enable value of the service resource.  Default: `true`
 * `galera_nodes`: Comma separated list of node IP addresses. *required*
 * `galera_group`: Galera cluster name *required*
 * `galera_options`: Optional parameters to pass to garbd

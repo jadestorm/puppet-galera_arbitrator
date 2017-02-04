@@ -1,6 +1,6 @@
 {
   "name": "jadestorm-galera_arbitrator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Daniel Henninger",
   "summary": "Manages a bare bones Galera Arbitrator node without touching anything else",
   "license": "Apache-2.0",
@@ -41,7 +41,31 @@
         "6",
         "7"
       ]
-    }
+    },
+    {
+      "operatingsystem": "OracleLinux",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7",
+        "8"
+      ]
+    },
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "10.04",
+        "12.04",
+        "14.04",
+        "16.04" 
+      ]
+    },
   ]
 }
 
