@@ -39,7 +39,8 @@ anything else on the system.
 
 ### Setup Requirements
 
-Depends on puppetlabs-stdlib.
+* Depends on puppetlabs-stdlib.
+* You *must* have Percona's package repository (or whatever repo contains the packagename specified) configured for this to work, this module does not take care of it for you.
 
 ## Usage
 
