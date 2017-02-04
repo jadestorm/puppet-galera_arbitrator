@@ -1,5 +1,5 @@
 # == Class: galera_arbitrator::params
-class galera_arbitrator::params inherits galera_arbitrator {
+class galera_arbitrator::params {
   $galera_nodes   = undef
   $galera_group   = undef
   $galera_options = undef
