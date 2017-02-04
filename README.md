@@ -62,10 +62,12 @@ as cluster group by garbd).  Ex:
 * `ensure_package`: Sets the ensure value of the package resource.  Default: `present`
 * `ensure_service`: Sets the ensure value of the service resource.  Default: `running`
 * `enable_service`: Sets the enable value of the service resource.  Default: `true`
-* `galera_nodes`: Comma separated list of node IP addresses. *required*
+* `galera_nodes`: Comma separated list of node IP addresses and optional ports using ipaddr:port. *required*
 * `galera_group`: Galera cluster name *required*
 * `galera_options`: Optional parameters to pass to garbd
 * `galera_logfile`: Optional log file path (defaults to syslog)
+
+*Note:* `galera_nodes` does not currently support passing an array, only a comma separated string.
 
 ## Reference
 
