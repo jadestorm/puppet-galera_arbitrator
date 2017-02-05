@@ -51,9 +51,15 @@ is call the module with the list of nodes and cluster name (referred to
 as cluster group by garbd).  Ex:
 
     class { 'galera_arbitrator':
-      galera_nodes => '1.1.1.1,2.2.2.2,3.3.3.3',
+      galera_nodes => '1.1.1.1:4567,2.2.2.2:4567,3.3.3.3:4567',
       galera_group => 'my_galera_cluster',
     }
+    
+You can also configure it via hiera and simply `include galera_arbitrator`:
+
+    ---
+    galera_arbitrator::galera_nodes: '1.1.1.1:4567,2.2.2.2:4567,3.3.3.3:4567'
+    galera_arbitrator::galera_group: 'my_galera_cluster'
 
 ### Parameters for the galera_arbitrator class
 * `servicename`: The service name used with init.d, systemctl, etc.  Default: `garbd`
