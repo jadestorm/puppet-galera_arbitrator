@@ -13,7 +13,7 @@ class galera_arbitrator::params {
     'RedHat': {
       $servicename = 'garb'
       $packagename = 'Percona-XtraDB-Cluster-garbd-57'
-      $sysconfig   = '/etc/sysconfig/garbd'
+      $sysconfig   = '/etc/sysconfig/garb'
     }
     'Debian': {
       $servicename = 'garbd'
