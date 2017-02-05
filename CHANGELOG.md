@@ -1,5 +1,11 @@
 # Changelog
 
+## 2017-02-04 - Release 1.0.2
+
+* Restored proper scoping of variables.
+* Added example of hiera parameter setting.
+* Added support for accepting a string or array for galera_nodes.
+
 ## 2017-02-04 - Release 1.0.1
 
 * Added options to provide more control: ensure_package, ensure_service, and enable_service.
