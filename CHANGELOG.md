@@ -1,5 +1,9 @@
 # Changelog
 
+** 2017-02--5 - Release 1.0.3
+
+* Switched default systemd name to garb.
+
 ## 2017-02-04 - Release 1.0.2
 
 * Restored proper scoping of variables.

@@ -11,7 +11,7 @@ class galera_arbitrator::params {
 
   case $::osfamily {
     'RedHat': {
-      $servicename = 'garbd'
+      $servicename = 'garb'
       $packagename = 'Percona-XtraDB-Cluster-garbd-57'
       $sysconfig   = '/etc/sysconfig/garbd'
     }
