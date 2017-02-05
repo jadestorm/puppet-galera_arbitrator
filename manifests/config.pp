@@ -1,6 +1,6 @@
 # == Class: galera_arbitrator::config
 class galera_arbitrator::config inherits galera_arbitrator {
-  file { $sysconfig:
+  file { $::galera_arbitrator::sysconfig:
     ensure  => present,
     owner   => 'root',
     group   => 'root',
