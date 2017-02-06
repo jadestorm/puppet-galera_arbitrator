@@ -1,6 +1,6 @@
 # Changelog
 
-** 2017-02--5 - Release 1.0.3
+** 2017-02-05 - Release 1.0.3
 
 * Switched default systemd name to garb.
 
