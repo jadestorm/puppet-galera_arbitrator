@@ -1,5 +1,12 @@
 # galera_arbitrator
 
+[![Build Status](https://travis-ci.org/jadestorm/puppet-galera_arbitrator.png?branch=master)](https://travis-ci.org/jadestorm/puppet-galera_arbitrator)
+[![Code Coverage](https://coveralls.io/repos/github/jadestorm/puppet-galera_arbitrator/badge.svg?branch=master)](https://coveralls.io/github/jadestorm/puppet-galera_arbitrator)
+[![Puppet Forge](https://img.shields.io/puppetforge/v/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
+[![Puppet Forge - downloads](https://img.shields.io/puppetforge/dt/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
+[![Puppet Forge - endorsement](https://img.shields.io/puppetforge/e/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
+[![Puppet Forge - scores](https://img.shields.io/puppetforge/f/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
+
 #### Table of Contents
 
 1. [Overview](#overview)
