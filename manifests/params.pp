@@ -4,7 +4,7 @@ class galera_arbitrator::params {
   $galera_group   = undef
   $galera_options = undef
   $galera_logfile = undef
-  
+
   $ensure_package = 'present'
   $ensure_service = 'running'
   $enable_service = true
