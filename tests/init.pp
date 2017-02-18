@@ -9,4 +9,7 @@
 # Learn more about module testing here:
 # http://docs.puppetlabs.com/guides/tests_smoke.html
 #
-include galera_arbitrator
+class { '::galera_arbitrator':
+  galera_nodes => '1.1.1.1,2.2.2.2,3.3.3.3',
+  galera_group => 'nonexistant_test_group',
+}
