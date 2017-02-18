@@ -19,13 +19,13 @@ describe 'galera_arbitrator' do
         it { is_expected.to contain_class('galera_arbitrator::service') }
         case facts[:osfamily]
         when 'RedHat'
-          it { is_expected.to contain_package('Percona-XtraDB-Cluster-garbd-5.7') }
+          it { is_expected.to contain_package('Percona-XtraDB-Cluster-garbd-57') }
           it { is_expected.to contain_service('garb') }
           it { is_expected.to contain_file('/etc/sysconfig/garb') }
         when 'Debian'
           it { is_expected.to contain_package('percona-xtradb-cluster-garbd-5.7') }
           it { is_expected.to contain_service('garbd') }
-          it { is_expected.to contain_file('/etc/sysconfig/garbd') }
+          it { is_expected.to contain_file('/etc/default/garbd') }
         end 
       end
     end
