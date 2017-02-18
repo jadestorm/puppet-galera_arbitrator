@@ -6,10 +6,10 @@ class galera_arbitrator(
   $ensure_package = $galera_arbitrator::params::ensure_package,
   $ensure_service = $galera_arbitrator::params::ensure_service,
   $enable_service = $galera_arbitrator::params::enable_service,
-  $galera_nodes   = $galera_artibrator::params::galera_nodes,
-  $galera_group   = $galera_artibrator::params::galera_group,
-  $galera_options = $galera_artibrator::params::galera_options,
-  $galera_logfile = $galera_artibrator::params::galera_logfile,
+  $galera_nodes   = $galera_arbitrator::params::galera_nodes,
+  $galera_group   = $galera_arbitrator::params::galera_group,
+  $galera_options = $galera_arbitrator::params::galera_options,
+  $galera_logfile = $galera_arbitrator::params::galera_logfile,
 ) inherits galera_arbitrator::params {
   validate_string($servicename)
   validate_string($packagename)
