@@ -30,9 +30,9 @@ class galera_arbitrator(
     validate_string($galera_logfile)
   }
 
-  anchor{'galera_arbitrator::begin':} ->
-  class{'::galera_arbitrator::install':} ->
-  class{'::galera_arbitrator::config':} ~>
-  class{'::galera_arbitrator::service':} ->
-  anchor{'galera_arbitrator::end':}
+  anchor{'galera_arbitrator::begin':}
+  -> class{'::galera_arbitrator::install':}
+  -> class{'::galera_arbitrator::config':}
+  ~> class{'::galera_arbitrator::service':}
+  -> anchor{'galera_arbitrator::end':}
 }
