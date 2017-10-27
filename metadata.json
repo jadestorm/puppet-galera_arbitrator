@@ -1,6 +1,6 @@
 {
   "name": "jadestorm-galera_arbitrator",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Daniel Henninger",
   "summary": "Manages a bare bones Galera Arbitrator node without touching anything else",
   "license": "Apache-2.0",
@@ -10,7 +10,7 @@
   "requirements": [
     {
       "name": "puppet",
-      "version_requirement": ">= 3.0.0 < 5.0.0"
+      "version_requirement": ">= 3.0.0 < 6.0.0"
     }
   ],
   "dependencies": [
