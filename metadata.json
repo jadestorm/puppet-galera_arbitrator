@@ -7,23 +7,11 @@
   "source": "https://github.com/jadestorm/puppet-galera_arbitrator",
   "project_page": "https://github.com/jadestorm/puppet-galera_arbitrator",
   "issues_url": "https://github.com/jadestorm/puppet-galera_arbitrator/issues",
-  "requirements": [
-    {
-      "name": "puppet",
-      "version_requirement": ">= 3.0.0 < 6.0.0"
-    }
-  ],
   "dependencies": [
     {
       "name": "puppetlabs-stdlib",
       "version_requirement": ">= 3.0.0 < 5.0.0"
     }
-  ],
-  "tags": [
-    "galera",
-    "garbd",
-    "percona",
-    "cluster"
   ],
   "operatingsystem_support": [
     {
@@ -63,9 +51,23 @@
         "10.04",
         "12.04",
         "14.04",
-        "16.04" 
+        "16.04"
       ]
     }
-  ]
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 3.0.0 < 6.0.0"
+    }
+  ],
+  "tags": [
+    "galera",
+    "garbd",
+    "percona",
+    "cluster"
+  ],
+  "pdk-version": "1.5.0",
+  "template-url": "https://github.com/puppetlabs/pdk-templates",
+  "template-ref": "heads/master-0-gc87eee3"
 }
-
