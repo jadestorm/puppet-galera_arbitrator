@@ -7,7 +7,7 @@
 [![Puppet Forge - endorsement](https://img.shields.io/puppetforge/e/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
 [![Puppet Forge - scores](https://img.shields.io/puppetforge/f/jadestorm/galera_arbitrator.svg)](https://forge.puppetlabs.com/jadestorm/galera_arbitrator)
 
-#### Table of Contents
+## Table of Contents
 
 1. [Overview](#overview)
 2. [Module Description - What the module does and why it is useful](#module-description)
@@ -17,8 +17,8 @@
     * [Beginning with galera_arbitrator](#beginning-with-galera_arbitrator)
 4. [Usage - Configuration options and additional functionality](#usage)
 5. [Reference - An under-the-hood peek at what the module is doing and how](#reference)
-5. [Limitations - OS compatibility, etc.](#limitations)
-6. [Development - Guide for contributing to the module](#development)
+6. [Limitations - OS compatibility, etc.](#limitations)
+7. [Development - Guide for contributing to the module](#development)
 
 ## Overview
 
@@ -46,8 +46,7 @@ anything else on the system.
 
 ### Setup Requirements
 
-* Depends on puppetlabs-stdlib.
-* You *must* have Percona's package repository (or whatever repo contains the packagename specified) configured for this to work, this module does not take care of it for you.
+* You *must* have Percona's package repository (or whatever repo contains the packagename specified) configured for this to work, this module does not take care of it for you.  There are multiple Puppet modules available that can assist with that.  I did not want to force a particular implementation.
 
 ## Usage
 
@@ -61,7 +60,7 @@ as cluster group by garbd).  Ex:
       galera_nodes => '1.1.1.1:4567,2.2.2.2:4567,3.3.3.3:4567',
       galera_group => 'my_galera_cluster',
     }
-    
+
 You can also configure it via hiera and simply `include galera_arbitrator`:
 
     ---
@@ -69,9 +68,10 @@ You can also configure it via hiera and simply `include galera_arbitrator`:
     galera_arbitrator::galera_group: 'my_galera_cluster'
 
 ### Parameters for the galera_arbitrator class
-* `servicename`: The service name used with init.d, systemctl, etc.  Default: `garbd`
-* `packagename`: The full package name used with your package manager.  Default: `Percona-XtraDB-Cluster-garbd-57`
-* `sysconfig`: Full path to the sysconfig file used by garbd.  Default: `/etc/sysconfig/garbd`
+
+* `servicename`: The service name used with init.d, systemctl, etc.  Default: system dependent, see data directory
+* `packagename`: The full package name used with your package manager.  Default: system dependent, see data directory
+* `sysconfig`: Full path to the sysconfig file used by garbd.  Default: system dependent, see data directory
 * `ensure_package`: Sets the ensure value of the package resource.  Default: `present`
 * `ensure_service`: Sets the ensure value of the service resource.  Default: `running`
 * `enable_service`: Sets the enable value of the service resource.  Default: `true`
@@ -87,7 +87,7 @@ For more information on how to use the Galera Arbitrator, see:
 
 ## Limitations
 
-Out of the box, this only supports RedHat style Linux distributions, and
+Out of the box, this only supports RedHat and Debian style Linux distributions, and
 only those that are supported by Percona.  Most Percona supported Linux
 distributions should be fairly easy to support by setting servicename,
 packagename, and sysconfig.

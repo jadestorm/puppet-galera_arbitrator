@@ -1,0 +1,9 @@
+---
+galera_arbitrator::galera_nodes: null
+galera_arbitrator::galera_group: null
+galera_arbitrator::galera_options: null
+galera_arbitrator::galera_logfile: null
+
+galera_arbitrator::ensure_package: 'present'
+galera_arbitrator::ensure_service: 'running'
+galera_arbitrator::enable_service: true

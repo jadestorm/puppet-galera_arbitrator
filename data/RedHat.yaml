@@ -1,0 +1,4 @@
+---
+galera_arbitrator::servicename: 'garb'
+galera_arbitrator::packagename: 'percona-xtradb-cluster-garbd'
+galera_arbitrator::sysconfig: '/etc/sysconfig/garb'

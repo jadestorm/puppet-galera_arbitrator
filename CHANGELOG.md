@@ -1,5 +1,18 @@
 # Changelog
 
+## 2023-09-06 - Release 2.0.0
+
+* Refactored to abide by modern standards.
+* Fixed Puppet 9 incompatibilities.
+* Removed stdlib dependency.
+* Added support for Rocky and Alma linux to match other RedHat family support.
+* Added support for modern versions of supported OSes.
+* BREAKING: Changed default installed version of garbd to 8.x series.  (which uses a more common name)
+* BREAKING: Dropped support for anything older than Puppet 7.
+* BREAKING: Dropped support for RedHat families older than 7.
+* BREAKING: Dropped support for Ubuntu older than 20.04.
+* BREAKING: Dropped support for Debian older than 8.
+
 ## 2017-10-27 - Release 1.0.5
 
 * Flagged as tested and supported under Puppet 5.
