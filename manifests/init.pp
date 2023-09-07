@@ -23,7 +23,7 @@ class galera_arbitrator (
   Optional[String]  $galera_group   = $galera_arbitrator::params::galera_group,
   Optional[String]  $galera_options = $galera_arbitrator::params::galera_options,
   Optional[String]  $galera_logfile = $galera_arbitrator::params::galera_logfile,
-) inherits galera_arbitrator::params {
+) {
   contain 'galera_arbitrator::install'
   contain 'galera_arbitrator::config'
   contain 'galera_arbitrator::service'
