@@ -13,16 +13,16 @@
 # @param galera_options Optional parameters to pass to garbd
 # @param galera_logfile Optional log file path (defaults to syslog)
 class galera_arbitrator (
-  String            $servicename    = $galera_arbitrator::params::servicename,
-  String            $packagename    = $galera_arbitrator::params::packagename,
-  String            $sysconfig      = $galera_arbitrator::params::sysconfig,
-  String            $ensure_package = $galera_arbitrator::params::ensure_package,
-  String            $ensure_service = $galera_arbitrator::params::ensure_service,
-  Boolean           $enable_service = $galera_arbitrator::params::enable_service,
-  Optional[String]  $galera_nodes   = $galera_arbitrator::params::galera_nodes,
-  Optional[String]  $galera_group   = $galera_arbitrator::params::galera_group,
-  Optional[String]  $galera_options = $galera_arbitrator::params::galera_options,
-  Optional[String]  $galera_logfile = $galera_arbitrator::params::galera_logfile,
+  String            $servicename,
+  String            $packagename,
+  String            $sysconfig,
+  String            $ensure_package,
+  String            $ensure_service,
+  Boolean           $enable_service,
+  Optional[String]  $galera_nodes,
+  Optional[String]  $galera_group,
+  Optional[String]  $galera_options,
+  Optional[String]  $galera_logfile,
 ) {
   contain 'galera_arbitrator::install'
   contain 'galera_arbitrator::config'
