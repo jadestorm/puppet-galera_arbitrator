@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-10-12 - Release 2.0.1
+
+* Fixed a bug where I was referring param variables even through I switched to the data model.  (broke under Puppet 8)
+
 ## 2023-09-06 - Release 2.0.0
 
 * Refactored to abide by modern standards.
