@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-10-13 - Release 2.0.2
+
+* I had built the package from a Windows machine and it made garb.erb have CRLF instead of just LF, breaking reading the file.
+
 ## 2023-10-12 - Release 2.0.1
 
 * Fixed a bug where I was referring param variables even through I switched to the data model.  (broke under Puppet 8)

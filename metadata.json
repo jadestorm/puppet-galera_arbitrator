@@ -1,6 +1,6 @@
 {
   "name": "jadestorm-galera_arbitrator",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": "Daniel Henninger",
   "summary": "Manages a bare bones Galera Arbitrator node without touching anything else",
   "license": "Apache-2.0",
